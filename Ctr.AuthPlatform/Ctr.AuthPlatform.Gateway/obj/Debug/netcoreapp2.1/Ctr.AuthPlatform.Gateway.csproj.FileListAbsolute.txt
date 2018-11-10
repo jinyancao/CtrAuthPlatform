@@ -1,0 +1,16 @@
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.deps.json
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.runtimeconfig.json
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.runtimeconfig.dev.json
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.dll
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.pdb
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.Views.dll
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.csproj.CoreCompileInputs.cache
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.RazorAssemblyInfo.cache
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.RazorAssemblyInfo.cs
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.AssemblyInfoInputs.cache
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.AssemblyInfo.cs
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.RazorTargetAssemblyInfo.cache
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.dll
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.pdb
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.csproj.CopyComplete
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.csprojAssemblyReference.cache

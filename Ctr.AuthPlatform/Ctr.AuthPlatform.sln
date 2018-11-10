@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ctr.AuthPlatform.Gateway", "Ctr.AuthPlatform.Gateway\Ctr.AuthPlatform.Gateway.csproj", "{05B3CCBA-9921-4667-9454-DD7545B7A651}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05B3CCBA-9921-4667-9454-DD7545B7A651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B3CCBA-9921-4667-9454-DD7545B7A651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B3CCBA-9921-4667-9454-DD7545B7A651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B3CCBA-9921-4667-9454-DD7545B7A651}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B1C40DE-D73F-4103-AD73-8249022B1FBA}
+	EndGlobalSection
+EndGlobal
