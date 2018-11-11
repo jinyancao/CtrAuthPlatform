@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Ocelot.DependencyInjection;
+using Ctr.AhphOcelot.Middleware;
 namespace Ctr.AuthPlatform.Gateway
 {
     public class Startup
@@ -20,21 +21,13 @@ namespace Ctr.AuthPlatform.Gateway
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
+            services.AddOcelot().AddAhphOcelot(option=>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+                option.DbConnectionStrings = "Server=.;Database=Ctr_AuthPlatform;User ID=sa;Password=bl123456;";
             });
-
-
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -45,11 +38,7 @@ namespace Ctr.AuthPlatform.Gateway
             {
                 app.UseExceptionHandler("/Error");
             }
-
-            app.UseStaticFiles();
-            app.UseCookiePolicy();
-
-            app.UseMvc();
+            app.UseAhphOcelot().Wait();
         }
     }
 }
