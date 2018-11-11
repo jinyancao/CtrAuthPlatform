@@ -14,3 +14,5 @@ D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPla
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.pdb
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.csproj.CopyComplete
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.Gateway.csprojAssemblyReference.cache
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AhphOcelot.dll
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.Gateway\bin\Debug\netcoreapp2.1\Ctr.AhphOcelot.pdb
