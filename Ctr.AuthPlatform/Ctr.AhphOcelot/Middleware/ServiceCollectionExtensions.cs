@@ -1,4 +1,5 @@
 ﻿using Ctr.AhphOcelot.Configuration;
+using Ctr.AhphOcelot.DataBase.MySql;
 using Ctr.AhphOcelot.DataBase.SqlServer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -10,7 +11,7 @@ namespace Ctr.AhphOcelot.Middleware
 {
     /// <summary>
     /// 金焰的世界
-    /// 2018-11-11
+    /// 2018-11-12
     /// 扩展Ocelot实现的自定义的注入
     /// </summary>
     public static class ServiceCollectionExtensions
@@ -28,6 +29,19 @@ namespace Ctr.AhphOcelot.Middleware
                 resolver => resolver.GetRequiredService<IOptions<AhphOcelotConfiguration>>().Value);
             //配置文件仓储注入
             builder.Services.AddSingleton<IFileConfigurationRepository, SqlServerFileConfigurationRepository>();
+            //注册后端服务
+            builder.Services.AddHostedService<DbConfigurationPoller>();
+            return builder;
+        }
+
+        /// <summary>
+        /// 扩展使用Mysql存储。
+        /// </summary>
+        /// <param name="builder"></param>
+        /// <returns></returns>
+        public static IOcelotBuilder UseMySql(this IOcelotBuilder builder)
+        {
+            builder.Services.AddSingleton<IFileConfigurationRepository, MySqlFileConfigurationRepository>();
             return builder;
         }
     }
