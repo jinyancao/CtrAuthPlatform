@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Ocelot.DependencyInjection;
 using Ctr.AhphOcelot.Middleware;
+using IdentityServer4.AccessTokenValidation;
+using Ocelot.Administration;
+
 namespace Ctr.AuthPlatform.Gateway
 {
     public class Startup
@@ -23,10 +26,20 @@ namespace Ctr.AuthPlatform.Gateway
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOcelot().AddAhphOcelot(option=>
+            Action<IdentityServerAuthenticationOptions> options = o =>
             {
-                option.DbConnectionStrings = "Server=.;Database=Ctr_AuthPlatform;User ID=sa;Password=bl123456;";
-            });
+                o.Authority = "http://localhost:6611"; //IdentityServer地址
+                o.RequireHttpsMetadata = false;
+                o.ApiName = "gateway_admin"; //网关管理的名称，对应的为客户端授权的scope
+            };
+            services.AddOcelot().AddAhphOcelot(option =>
+            {
+                option.DbConnectionStrings = "Server=localhost;Database=Ctr_AuthPlatform;User ID=root;Password=bl123456;";
+                //option.EnableTimer = true;//启用定时任务
+                //option.TimerDelay = 10 * 000;//周期10秒
+            })
+            .UseMySql()
+            .AddAdministration("/CtrOcelot", options);
         }
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
