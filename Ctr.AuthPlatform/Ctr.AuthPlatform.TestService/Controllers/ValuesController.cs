@@ -15,13 +15,14 @@ namespace Ctr.AuthPlatform.TestService.Controllers
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "value1", "value2" };
+     
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return id+"-"+DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
         // POST api/values

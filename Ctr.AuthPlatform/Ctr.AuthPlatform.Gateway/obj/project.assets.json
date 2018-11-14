@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "CSRedisCore/3.0.20": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "SafeObjectPool": "1.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/CSRedisCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CSRedisCore.dll": {}
+        }
+      },
       "Dapper/1.50.5": {
         "type": "package",
         "dependencies": {
@@ -3028,6 +3041,15 @@
           }
         }
       },
+      "SafeObjectPool/1.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/SafeObjectPool.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SafeObjectPool.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4544,6 +4566,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "CSRedisCore": "3.0.20",
           "Dapper": "1.50.5",
           "MySql.Data.EntityFrameworkCore": "8.0.13",
           "Ocelot": "12.0.1"
@@ -4558,6 +4581,18 @@
     }
   },
   "libraries": {
+    "CSRedisCore/3.0.20": {
+      "sha512": "PnIA5/e9TXKy5Yly8CPuGPG8Ut2QpJ8+t2RSjyvSP4hP0mN0OP90j+xHI6VDJnxwo6AkVLf6BPW7DzRHzwf63g==",
+      "type": "package",
+      "path": "csrediscore/3.0.20",
+      "files": [
+        ".signature.p7s",
+        "csrediscore.3.0.20.nupkg.sha512",
+        "csrediscore.nuspec",
+        "lib/netstandard2.0/CSRedisCore.dll",
+        "lib/netstandard2.0/CSRedisCore.xml"
+      ]
+    },
     "Dapper/1.50.5": {
       "sha512": "1vPpX7WQmQCIb7rwlGOUoVs/yWZhVKvdhuG7WrJV+V+qsP8btnrrCqVWHENAlJxBAnUw5rhWfmuba9/Egei9MA==",
       "type": "package",
@@ -7582,6 +7617,18 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SafeObjectPool/1.0.11": {
+      "sha512": "7bLaLCFVbTJuPifWDOvMzcwCufOIIjgXXEGH9E6BsD7/ytpoBeEo9prsHm+CSy7Ar+g6hOLRXwAj/aI+lD/6Bw==",
+      "type": "package",
+      "path": "safeobjectpool/1.0.11",
+      "files": [
+        ".signature.p7s",
+        "lib/netstandard2.0/SafeObjectPool.dll",
+        "lib/netstandard2.0/SafeObjectPool.xml",
+        "safeobjectpool.1.0.11.nupkg.sha512",
+        "safeobjectpool.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -12073,6 +12120,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "CSRedisCore >= 3.0.20",
       "Ctr.AhphOcelot >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12125,6 +12173,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "CSRedisCore": {
+            "target": "Package",
+            "version": "[3.0.20, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

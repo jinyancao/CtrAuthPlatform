@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "62bd7e0d3da8418c54e8b69981099fc00818d676"
+    "signature": "5e4697b416fc6771bcb100f0ca1a3e060193b759"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Ctr.AuthPlatform.Gateway/1.0.0": {
         "dependencies": {
+          "CSRedisCore": "3.0.20",
           "Ctr.AhphOcelot": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
@@ -35,6 +36,21 @@
         },
         "compile": {
           "Ctr.AuthPlatform.Gateway.dll": {}
+        }
+      },
+      "CSRedisCore/3.0.20": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "SafeObjectPool": "1.0.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CSRedisCore.dll": {
+            "assemblyVersion": "3.0.20.0",
+            "fileVersion": "3.0.20.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/CSRedisCore.dll": {}
         }
       },
       "Dapper/1.50.5": {
@@ -511,6 +527,17 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
+      "SafeObjectPool/1.0.11": {
+        "runtime": {
+          "lib/netstandard2.0/SafeObjectPool.dll": {
+            "assemblyVersion": "1.0.11.0",
+            "fileVersion": "1.0.11.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/SafeObjectPool.dll": {}
+        }
+      },
       "System.Collections.Immutable/1.5.0": {},
       "System.ComponentModel/4.3.0": {
         "dependencies": {
@@ -703,6 +730,7 @@
       },
       "Ctr.AhphOcelot/1.0.0": {
         "dependencies": {
+          "CSRedisCore": "3.0.20",
           "Dapper": "1.50.5",
           "MySql.Data.EntityFrameworkCore": "8.0.13",
           "Ocelot": "12.0.1"
@@ -3426,6 +3454,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CSRedisCore/3.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PnIA5/e9TXKy5Yly8CPuGPG8Ut2QpJ8+t2RSjyvSP4hP0mN0OP90j+xHI6VDJnxwo6AkVLf6BPW7DzRHzwf63g==",
+      "path": "csrediscore/3.0.20",
+      "hashPath": "csrediscore.3.0.20.nupkg.sha512"
+    },
     "Dapper/1.50.5": {
       "type": "package",
       "serviceable": true,
@@ -3600,6 +3635,13 @@
       "sha512": "sha512-fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
+    },
+    "SafeObjectPool/1.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7bLaLCFVbTJuPifWDOvMzcwCufOIIjgXXEGH9E6BsD7/ytpoBeEo9prsHm+CSy7Ar+g6hOLRXwAj/aI+lD/6Bw==",
+      "path": "safeobjectpool/1.0.11",
+      "hashPath": "safeobjectpool.1.0.11.nupkg.sha512"
     },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",
