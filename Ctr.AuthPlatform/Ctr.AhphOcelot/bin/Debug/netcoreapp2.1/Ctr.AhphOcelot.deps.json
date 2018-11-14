@@ -1,19 +1,32 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "50afb53c73e342f01f6f80861c2137eb335c7e4f"
+    "signature": "ad60577e7352af5041172f1071b2fa5e89113426"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "Ctr.AhphOcelot/1.0.0": {
         "dependencies": {
+          "CSRedisCore": "3.0.20",
           "Dapper": "1.50.5",
           "MySql.Data.EntityFrameworkCore": "8.0.13",
           "Ocelot": "12.0.1"
         },
         "runtime": {
           "Ctr.AhphOcelot.dll": {}
+        }
+      },
+      "CSRedisCore/3.0.20": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "SafeObjectPool": "1.0.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CSRedisCore.dll": {
+            "assemblyVersion": "3.0.20.0",
+            "fileVersion": "3.0.20.0"
+          }
         }
       },
       "Dapper/1.50.5": {
@@ -1519,6 +1532,14 @@
           }
         }
       },
+      "SafeObjectPool/1.0.11": {
+        "runtime": {
+          "lib/netstandard2.0/SafeObjectPool.dll": {
+            "assemblyVersion": "1.0.11.0",
+            "fileVersion": "1.0.11.0"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -2299,6 +2320,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CSRedisCore/3.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PnIA5/e9TXKy5Yly8CPuGPG8Ut2QpJ8+t2RSjyvSP4hP0mN0OP90j+xHI6VDJnxwo6AkVLf6BPW7DzRHzwf63g==",
+      "path": "csrediscore/3.0.20",
+      "hashPath": "csrediscore.3.0.20.nupkg.sha512"
     },
     "Dapper/1.50.5": {
       "type": "package",
@@ -3174,6 +3202,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SafeObjectPool/1.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7bLaLCFVbTJuPifWDOvMzcwCufOIIjgXXEGH9E6BsD7/ytpoBeEo9prsHm+CSy7Ar+g6hOLRXwAj/aI+lD/6Bw==",
+      "path": "safeobjectpool/1.0.11",
+      "hashPath": "safeobjectpool.1.0.11.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

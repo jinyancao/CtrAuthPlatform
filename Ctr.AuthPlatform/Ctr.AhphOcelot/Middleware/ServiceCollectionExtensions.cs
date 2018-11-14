@@ -1,8 +1,11 @@
-﻿using Ctr.AhphOcelot.Configuration;
+﻿using Ctr.AhphOcelot.Cache;
+using Ctr.AhphOcelot.Configuration;
 using Ctr.AhphOcelot.DataBase.MySql;
 using Ctr.AhphOcelot.DataBase.SqlServer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Ocelot.Cache;
+using Ocelot.Configuration.File;
 using Ocelot.Configuration.Repository;
 using Ocelot.DependencyInjection;
 using System;
@@ -31,6 +34,11 @@ namespace Ctr.AhphOcelot.Middleware
             builder.Services.AddSingleton<IFileConfigurationRepository, SqlServerFileConfigurationRepository>();
             //注册后端服务
             builder.Services.AddHostedService<DbConfigurationPoller>();
+            //使用Redis重写缓存
+            //builder.Services.AddSingleton(typeof(IOcelotCache<>), typeof(InRedisCache<>));
+            builder.Services.AddSingleton<IOcelotCache<FileConfiguration>, InRedisCache<FileConfiguration>>();
+            builder.Services.AddSingleton<IOcelotCache<CachedResponse>, InRedisCache<CachedResponse>>();
+            builder.Services.AddSingleton<IInternalConfigurationRepository, RedisInternalConfigurationRepository>();
             return builder;
         }
 
