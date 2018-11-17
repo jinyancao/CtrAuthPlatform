@@ -49,7 +49,7 @@ namespace Ctr.AuthPlatform.TestIds4
         {
             return new List<ApiResource>
             {
-                new ApiResource("api1", "My API"),
+                new ApiResource("gateway", "My Test API"),
                 new ApiResource("gateway_admin", "My admin API")
             };
         }
@@ -69,7 +69,7 @@ namespace Ctr.AuthPlatform.TestIds4
                     {
                         new Secret("secret1".Sha256())
                     },
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = { "gateway" }
                 },
                 new Client
                 {
@@ -80,7 +80,7 @@ namespace Ctr.AuthPlatform.TestIds4
                     {
                         new Secret("secret2".Sha256())
                     },
-                    AllowedScopes = { "gateway_admin" }
+                    AllowedScopes = { "gateway","gateway_admin" }
                 }
             };
         }

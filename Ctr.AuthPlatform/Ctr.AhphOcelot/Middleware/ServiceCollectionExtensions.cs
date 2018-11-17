@@ -1,4 +1,5 @@
-﻿using Ctr.AhphOcelot.Cache;
+﻿using Ctr.AhphOcelot.Authentication;
+using Ctr.AhphOcelot.Cache;
 using Ctr.AhphOcelot.Configuration;
 using Ctr.AhphOcelot.DataBase.MySql;
 using Ctr.AhphOcelot.DataBase.SqlServer;
@@ -32,6 +33,7 @@ namespace Ctr.AhphOcelot.Middleware
                 resolver => resolver.GetRequiredService<IOptions<AhphOcelotConfiguration>>().Value);
             //配置文件仓储注入
             builder.Services.AddSingleton<IFileConfigurationRepository, SqlServerFileConfigurationRepository>();
+            builder.Services.AddSingleton<IClientAuthenticationRepository, SqlServerClientAuthenticationRepository>();
             //注册后端服务
             builder.Services.AddHostedService<DbConfigurationPoller>();
             //使用Redis重写缓存
@@ -39,6 +41,10 @@ namespace Ctr.AhphOcelot.Middleware
             builder.Services.AddSingleton<IOcelotCache<FileConfiguration>, InRedisCache<FileConfiguration>>();
             builder.Services.AddSingleton<IOcelotCache<CachedResponse>, InRedisCache<CachedResponse>>();
             builder.Services.AddSingleton<IInternalConfigurationRepository, RedisInternalConfigurationRepository>();
+            builder.Services.AddSingleton<IOcelotCache<ClientRoleModel>, InRedisCache<ClientRoleModel>>();
+
+            //注入授权
+            builder.Services.AddSingleton<IAhphAuthenticationProcessor, AhphAuthenticationProcessor>();
             return builder;
         }
 
@@ -50,6 +56,7 @@ namespace Ctr.AhphOcelot.Middleware
         public static IOcelotBuilder UseMySql(this IOcelotBuilder builder)
         {
             builder.Services.AddSingleton<IFileConfigurationRepository, MySqlFileConfigurationRepository>();
+            builder.Services.AddSingleton<IClientAuthenticationRepository, MySqlClientAuthenticationRepository>();
             return builder;
         }
     }
