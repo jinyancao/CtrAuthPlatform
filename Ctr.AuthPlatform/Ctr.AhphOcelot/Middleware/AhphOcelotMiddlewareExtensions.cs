@@ -56,7 +56,9 @@ namespace Ctr.AhphOcelot.Middleware
         {
             var pipelineBuilder = new OcelotPipelineBuilder(builder.ApplicationServices);
 
-            pipelineBuilder.BuildOcelotPipeline(pipelineConfiguration);
+            //pipelineBuilder.BuildOcelotPipeline(pipelineConfiguration);
+            //使用自定义管道扩展 2018-11-15 金焰的世界
+            pipelineBuilder.BuildAhphOcelotPipeline(pipelineConfiguration);
 
             var firstDelegate = pipelineBuilder.Build();
 

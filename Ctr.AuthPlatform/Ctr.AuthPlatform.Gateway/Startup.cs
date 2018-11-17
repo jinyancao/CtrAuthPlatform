@@ -26,6 +26,17 @@ namespace Ctr.AuthPlatform.Gateway
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var authenticationProviderKey = "TestKey";
+            Action<IdentityServerAuthenticationOptions> gatewayoptions = o =>
+            {
+                o.Authority = "http://localhost:6611";
+                o.ApiName = "gateway";
+                o.RequireHttpsMetadata = false;
+            };
+
+            services.AddAuthentication()
+                .AddIdentityServerAuthentication(authenticationProviderKey, gatewayoptions);
+
             Action<IdentityServerAuthenticationOptions> options = o =>
             {
                 o.Authority = "http://localhost:6611"; //IdentityServer地址
@@ -40,6 +51,7 @@ namespace Ctr.AuthPlatform.Gateway
                 };
                 //option.EnableTimer = true;//启用定时任务
                 //option.TimerDelay = 10 * 000;//周期10秒
+                option.ClientAuthorization = true;
             })
             //.UseMySql()
             .AddAdministration("/CtrOcelot", options);
