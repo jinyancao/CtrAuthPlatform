@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Ctr.AhphOcelot.Authentication.Middleware;
+using Ctr.AhphOcelot.RateLimit.Middleware;
 using Ocelot.Authentication.Middleware;
 using Ocelot.Authorisation.Middleware;
 using Ocelot.Cache.Middleware;
@@ -94,7 +95,10 @@ namespace Ctr.AhphOcelot.Middleware
                 builder.Use(pipelineConfiguration.AuthenticationMiddleware);
             }
 
-            //添加自定义授权中间  2018-11-15 金焰的世界
+            //添加自定义限流中间件 2018-11-18 金焰的世界
+            builder.UseAhphClientRateLimitMiddleware();
+
+            //添加自定义授权中间件  2018-11-15 金焰的世界
             builder.UseAhphAuthenticationMiddleware();
 
             // Allow pre authorisation logic. The idea being people might want to run something custom before what is built in.

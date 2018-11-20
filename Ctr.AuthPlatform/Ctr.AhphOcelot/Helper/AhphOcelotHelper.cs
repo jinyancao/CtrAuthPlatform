@@ -26,5 +26,33 @@ namespace Ctr.AhphOcelot
             }
             return BitConverter.ToString(hashBytes).Replace("-", string.Empty);
         }
+
+        /// <summary>
+        /// 金焰的世界
+        /// 2018-11-19
+        /// 根据限流标识，获取周期秒数
+        /// </summary>
+        /// <param name="timeSpan">标识</param>
+        /// <returns></returns>
+        public static int ConvertToSecond(string timeSpan)
+        {
+            var l = timeSpan.Length - 1;
+            var value = timeSpan.Substring(0, l);
+            var type = timeSpan.Substring(l, 1);
+
+            switch (type)
+            {
+                case "d":
+                    return Convert.ToInt32(double.Parse(value) * 24 * 3600);
+                case "h":
+                    return Convert.ToInt32(double.Parse(value) * 3600);
+                case "m":
+                    return Convert.ToInt32(double.Parse(value) * 60);
+                case "s":
+                    return Convert.ToInt32(value);
+                default:
+                    throw new FormatException($"{timeSpan} can't be converted to TimeSpan, unknown type {type}");
+            }
+        }
     }
 }
