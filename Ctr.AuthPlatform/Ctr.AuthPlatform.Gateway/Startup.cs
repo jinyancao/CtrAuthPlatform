@@ -52,6 +52,7 @@ namespace Ctr.AuthPlatform.Gateway
                 //option.EnableTimer = true;//启用定时任务
                 //option.TimerDelay = 10 * 000;//周期10秒
                 option.ClientAuthorization = true;
+                option.ClientRateLimit = true;
             })
             //.UseMySql()
             .AddAdministration("/CtrOcelot", options);

@@ -39,7 +39,7 @@ namespace Ctr.AhphOcelot.Authentication.Middleware
             {
                 if (!_options.ClientAuthorization)
                 {
-                    Logger.LogInformation($"未启用客户端授权管道");
+                    Logger.LogInformation($"未启用客户端认证中间件");
                     await _next.Invoke(context);
                 }
                 else
@@ -60,11 +60,6 @@ namespace Ctr.AhphOcelot.Authentication.Middleware
                     }
                     else
                     {//未授权直接返回错误
-                        //var errResult = new ErrorResult() { errcode=401, errmsg= "请求地址未授权" };
-                        //var message = errResult.ToJson();
-                        //context.HttpContext.Response.StatusCode = (int)HttpStatusCode.OK;
-                        //await context.HttpContext.Response.WriteAsync(message);
-                        //return;
                         var error = new UnauthenticatedError($"请求认证路由 {context.HttpContext.Request.Path}客户端未授权");
                         Logger.LogWarning($"路由地址 {context.HttpContext.Request.Path} 自定义认证管道校验失败. {error}");
                         SetPipelineError(context, error);

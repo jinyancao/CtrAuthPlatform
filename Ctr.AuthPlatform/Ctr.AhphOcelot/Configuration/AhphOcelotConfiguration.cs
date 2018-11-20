@@ -59,5 +59,19 @@ namespace Ctr.AhphOcelot.Configuration
         /// 客户端标识，默认 client_id
         /// </summary>
         public string ClientKey { get; set; } = "client_id";
+
+        /// <summary>
+        /// 金焰的世界
+        /// 2018-11-18
+        /// 是否开启自定义限流，默认不开启
+        /// </summary>
+        public bool ClientRateLimit { get; set; } = false;
+
+        /// <summary>
+        /// 金焰的世界
+        /// 2018-11-18
+        /// 客户端限流缓存时间，默认30分钟
+        /// </summary>
+        public int ClientRateLimitCacheTime { get; set; } = 1800;
     }
 }
