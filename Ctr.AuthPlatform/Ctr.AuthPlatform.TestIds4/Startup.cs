@@ -29,7 +29,7 @@ namespace Ctr.AuthPlatform.TestIds4
                 //.AddInMemoryApiResources(Config.GetApiResources())
                 //.AddInMemoryClients(Config.GetClients());
                 .AddDapperStore(option=> {
-                    option.DbConnectionStrings = "Server=120.55.56.18;Database=mpc_identity;User ID=root;Password=Ahph65167235;";
+                    option.DbConnectionStrings = "Server=.;Database=mpc_identity;User ID=root;Password=bl123456;";
                 }).UseMySql()
                 ;
         }
