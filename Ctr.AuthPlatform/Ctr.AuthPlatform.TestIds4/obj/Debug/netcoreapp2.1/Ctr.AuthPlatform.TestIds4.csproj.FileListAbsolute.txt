@@ -29,3 +29,6 @@ D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPla
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestIds4\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestIds4.dll
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestIds4\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestIds4.pdb
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestIds4\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestIds4.csproj.CopyComplete
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestIds4\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestIds4.csprojAssemblyReference.cache
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestIds4\bin\Debug\netcoreapp2.1\IdentityServer4.Dapper.dll
+D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestIds4\bin\Debug\netcoreapp2.1\IdentityServer4.Dapper.pdb

@@ -26,8 +26,12 @@ namespace Ctr.AuthPlatform.TestIds4
         {
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
-                .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryClients(Config.GetClients());
+                //.AddInMemoryApiResources(Config.GetApiResources())
+                //.AddInMemoryClients(Config.GetClients());
+                .AddDapperStore(option=> {
+                    option.DbConnectionStrings = "Server=.;Database=mpc_identity;User ID=root;Password=bl123456;";
+                }).UseMySql()
+                ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

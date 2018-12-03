@@ -3,7 +3,6 @@ D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPla
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestService\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestService.runtimeconfig.json
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestService\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestService.runtimeconfig.dev.json
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestService\bin\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestService.pdb
-D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestService\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestService.csprojAssemblyReference.cache
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestService\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestService.csproj.CoreCompileInputs.cache
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestService\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestService.RazorAssemblyInfo.cache
 D:\Blogs\博客\NETCORE统一认证平台\源代码\Ctr.AuthPlatform\Ctr.AuthPlatform.TestService\obj\Debug\netcoreapp2.1\Ctr.AuthPlatform.TestService.RazorAssemblyInfo.cs
