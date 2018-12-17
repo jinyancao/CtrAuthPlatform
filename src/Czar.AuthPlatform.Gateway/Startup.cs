@@ -30,8 +30,8 @@ namespace Czar.AuthPlatform.Gateway
             var authenticationProviderKey = "TestKey";
             Action<IdentityServerAuthenticationOptions> gatewayoptions = o =>
             {
-                o.Authority = "http://localhost:6611";
-                o.ApiName = "gateway";
+                o.Authority = "http://localhost:7777";
+                o.ApiName = "mpc_gateway";
                 o.RequireHttpsMetadata = false;
             };
 
@@ -40,7 +40,7 @@ namespace Czar.AuthPlatform.Gateway
 
             Action<IdentityServerAuthenticationOptions> options = o =>
             {
-                o.Authority = "http://localhost:6611"; //IdentityServer地址
+                o.Authority = "http://localhost:7777"; //IdentityServer地址
                 o.RequireHttpsMetadata = false;
                 o.ApiName = "gateway_admin"; //网关管理的名称，对应的为客户端授权的scope
             };
