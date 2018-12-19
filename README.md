@@ -31,9 +31,9 @@
 - [第六章 网关篇-自定义客户端授权](https://www.cnblogs.com/jackcao/p/9973765.html)
 - [第七章 网关篇-自定义客户端限流](https://www.cnblogs.com/jackcao/p/9987424.html)
 - [第八章 授权篇-IdentityServer4源码解析](https://www.cnblogs.com/jackcao/p/10031828.html)
-- 第九章 授权篇-使用dapper重构IdenityServer4
-- 第十章 授权篇-客户端授权
-- 第十一章 授权篇-用户密码授权
+- [第九章 授权篇-使用dapper重构IdenityServer4](https://www.cnblogs.com/jackcao/p/10058274.html)
+- [第十章 授权篇-客户端授权模式](https://www.cnblogs.com/jackcao/p/10100621.html)
+- [第十一章 授权篇-密码授权模式](https://www.cnblogs.com/jackcao/p/10140688.html)
 - 第十二章 授权篇-自定义用户授权兼容老系统
 - 第十三章 授权篇-验证码授权
 - 第十四章 授权篇-QQ、微信等第三方授权
