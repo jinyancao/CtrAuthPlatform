@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.AuthPlatform.UserServi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{7739741A-E632-4026-8C20-DB1E3540E240}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.AuthPlatform.Core", "src\Czar.AuthPlatform.Core\Czar.AuthPlatform.Core.csproj", "{E4073D11-AA7F-478B-B272-CD047AE1AAE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Czar.AuthPlatform.Core", "src\Czar.AuthPlatform.Core\Czar.AuthPlatform.Core.csproj", "{E4073D11-AA7F-478B-B272-CD047AE1AAE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Czar.AuthPlatform.WebApi", "src\Czar.AuthPlatform.WebApi\Czar.AuthPlatform.WebApi.csproj", "{57149BB1-4491-4AB8-98B6-46989D9DE0C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{E4073D11-AA7F-478B-B272-CD047AE1AAE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4073D11-AA7F-478B-B272-CD047AE1AAE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4073D11-AA7F-478B-B272-CD047AE1AAE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57149BB1-4491-4AB8-98B6-46989D9DE0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57149BB1-4491-4AB8-98B6-46989D9DE0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57149BB1-4491-4AB8-98B6-46989D9DE0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57149BB1-4491-4AB8-98B6-46989D9DE0C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{559C10C6-F35E-45FD-88FC-1B13E1AC295C} = {188E0015-EF1E-4B4B-B913-38EEE7A0B4B4}
 		{E73C4545-2C37-4807-9E1F-FF853A42340A} = {188E0015-EF1E-4B4B-B913-38EEE7A0B4B4}
 		{E4073D11-AA7F-478B-B272-CD047AE1AAE6} = {188E0015-EF1E-4B4B-B913-38EEE7A0B4B4}
+		{57149BB1-4491-4AB8-98B6-46989D9DE0C9} = {188E0015-EF1E-4B4B-B913-38EEE7A0B4B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53A116D3-F971-4DD1-AF26-275F7A02849A}
