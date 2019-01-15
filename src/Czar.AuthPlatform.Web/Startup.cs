@@ -7,6 +7,7 @@ using Autofac.Extensions.DependencyInjection;
 using Czar.AuthPlatform.Web.Application.Ids4;
 using Czar.AuthPlatform.Web.Application.Modules;
 using Czar.AuthPlatform.Web.Infrastructure.Config;
+using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,7 +31,7 @@ namespace Czar.AuthPlatform.Web
         {
             services.AddSingleton(Configuration);
             services.Configure<CzarConfig>(Configuration.GetSection("CzarConfig"));
-            services.AddIdentityServer(option=> {
+            services.AddIdentityServer(option => {
                 option.PublicOrigin = Configuration["CzarConfig:PublicOrigin"];
             })
                 .AddDeveloperSigningCredential()
@@ -40,6 +41,8 @@ namespace Czar.AuthPlatform.Web
                 })
                 .AddResourceOwnerValidator<CzarResourceOwnerPasswordValidator>()
                 .AddProfileService<CzarProfileService>()
+                .AddSecretValidator<JwtSecretValidator>()
+               // .AddSecretValidator<PlainTextSharedSecretValidator>()
                 ;
               //  .UseMySql();
 
